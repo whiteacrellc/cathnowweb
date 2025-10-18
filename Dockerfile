@@ -5,6 +5,7 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
 COPY privacy_policy.html /usr/share/nginx/html/
 COPY styles.css /usr/share/nginx/html/
+COPY iphone.jpg /usr/share/nginx/html/
 
 # Create nginx configuration for Cloud Run
 RUN echo 'server { \
